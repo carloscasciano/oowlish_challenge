@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { getUsers } from "../../dataRequests/dataRequests";
+import AddUser from './AddUser'
 import Loading from "../utilities/Loading";
 import MainUserCard from "./MainUserCard";
 
 export default function Main() {
   const [users, setUsers] = useState([]);
-
   async function handleUsersData() {
+    console.log("AQUI AQUI")
     let usersFromServer = await getUsers();
     setUsers(usersFromServer);
   }
@@ -17,7 +18,6 @@ export default function Main() {
 
   return (
     <div>
-      <p>Main Area</p>
       <button onClick={() => console.log(users)}>TESTING BUTTON</button>
       {users.length === 0 ? (
         <Loading />
@@ -28,6 +28,7 @@ export default function Main() {
           </div>
         ))
       )}
+      <AddUser handleUsersData={handleUsersData}/>
     </div>
   );
 }
