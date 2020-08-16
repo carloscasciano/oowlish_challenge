@@ -19,12 +19,33 @@ export async function addUser(newUserName, newUserDesiredWorkHours) {
     userName: newUserName,
     userExpectedHoursPerDay: newUserDesiredWorkHours,
   };
+  await axios.post(`${serverURL}users`, newUser).catch(function (error) {
+    console.log(error);
+  });
+}
+
+export async function getSingleUserData(userId) {
+  let singleUserData = [];
   await axios
-    .post("http://localhost:3001/users", newUser)
+    .get(`${serverURL}users/${userId}`)
     .then(function (response) {
-      console.log(response);
+      singleUserData = response.data;
     })
     .catch(function (error) {
       console.log(error);
     });
+  return singleUserData;
+}
+
+export async function getUserWorkData(userId) {
+  let workData = [];
+  await axios
+    .get(`${serverURL}entries?userId=${userId}`)
+    .then(function (response) {
+      workData = response.data;
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+  return workData;
 }

@@ -3,31 +3,31 @@
     {
       "id": 1,
       "userName": "Abel Armstrong",
-      "userExpectedHoursPerDay": 8
+      "userExpectedHoursPerDay": "08:00"
     },
     {
       "id": 2,
       "userName": "Bruna Bianco",
-      "userExpectedHoursPerDay": 4
+      "userExpectedHoursPerDay": "08:00"
     },
     {
       "id": 3,
       "userName": "Charles Chance",
-      "userExpectedHoursPerDay": 4
+      "userExpectedHoursPerDay": "08:00"
     },
     {
       "id": 4,
       "userName": "Danielle Dante",
-      "userExpectedHoursPerDay": 8
+      "userExpectedHoursPerDay": "08:00"
     }
   ],
   "entries": [
     {
       "userId": 1,
-      "date": "Aug 17 2020",
-      "shiftStart": "10:34:27",
-      "shiftEnd": "16:34:27",
-      "totalBreakHours": 2,
+      "date": "Aug 1 2020",
+      "shiftStart": "10:34:13",
+      "shiftEnd": "16:54:27",
+      "totalBreakHours": "01:00:00",
       "id": 1
     },
     {
@@ -36,7 +36,7 @@
       "date": "Aug 2 2020",
       "shiftStart": "08:34:27",
       "shiftEnd": "17:34:27",
-      "totalBreakHours": 1
+      "totalBreakHours": "01:00:00"
     },
     {
       "id": 3,
@@ -44,7 +44,7 @@
       "date": "Aug 3 2020",
       "shiftStart": "08:34:27",
       "shiftEnd": "17:34:27",
-      "totalBreakHours": 1
+      "totalBreakHours": "01:00:00"
     },
     {
       "id": 4,
@@ -52,7 +52,7 @@
       "date": "Aug 4 2020",
       "shiftStart": "08:34:27",
       "shiftEnd": "17:34:27",
-      "totalBreakHours": 1
+      "totalBreakHours": "01:00:00"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@
       "date": "Aug 4 2020",
       "shiftStart": "08:34:27",
       "shiftEnd": "17:34:27",
-      "totalBreakHours": 1
+      "totalBreakHours": "01:00:00"
     }
   ]
 }

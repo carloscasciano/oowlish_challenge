@@ -7,7 +7,6 @@ import MainUserCard from "./MainUserCard";
 export default function Main() {
   const [users, setUsers] = useState([]);
   async function handleUsersData() {
-    console.log("AQUI AQUI")
     let usersFromServer = await getUsers();
     setUsers(usersFromServer);
   }
